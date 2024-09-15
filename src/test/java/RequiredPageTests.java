@@ -16,13 +16,11 @@ public class RequiredPageTests {
     }
 
     @Test
-    void searchRequiredPage() {
+    void searchRequiredPageTest() {
           open("https://github.com/");
           $(".d-lg-flex.list-style-none").find(byText("Solutions")).hover();
           $("[href='https://github.com/enterprise']").click();
           $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" + "developer platform."));
 
     }
-
-
 }

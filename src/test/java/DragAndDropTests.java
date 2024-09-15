@@ -16,7 +16,7 @@ public class DragAndDropTests {
     }
 
     @Test
-    void moveElements() {
+    void moveElementsTest() {
         //открываем сайт
         open("https://the-internet.herokuapp.com/drag_and_drop");
 
@@ -31,7 +31,6 @@ public class DragAndDropTests {
 
         //если перемещение удалось, то у квадрата А снова должен быть залоговок "А". Проверяем это
         $("#column-a").$("header").shouldHave(exactTextCaseSensitive("A"));
-
 
     }
 
